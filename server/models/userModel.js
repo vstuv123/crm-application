@@ -28,16 +28,6 @@ const userSchema = new mongoose.Schema({
         minlength: [10, "Phone number should be minimum of 10 digits"],
         maxlength: [12, "Phone number should be a maximum of 12 digits"],
     },
-    avatar: {
-        public_id: {
-            type: String,
-            required: true
-        },
-        url: {
-            type: String,
-            required: true
-        }
-    },
     role: {
         type: String,
         enum: ["Admin", "Manager", "Sales Representative"],
