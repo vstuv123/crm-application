@@ -28,7 +28,7 @@ if (process.env.NODE_ENV !== "PRODUCTION"){
 
 const PORT = process.env.PORT || 5000;
 
-const origin = process.env.NODE_ENV === 'production'
+const origin = process.env.NODE_ENV === 'PRODUCTION'
   ? process.env.PROD_ORIGIN
   : process.env.DEV_ORIGIN
 
