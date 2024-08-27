@@ -29,8 +29,8 @@ if (process.env.NODE_ENV !== "PRODUCTION"){
 const PORT = process.env.PORT || 5000;
 
 const origin = process.env.NODE_ENV === 'PRODUCTION'
-  ? process.env.PROD_ORIGIN
-  : process.env.DEV_ORIGIN
+  ? "https://crm-application-euve.onrender.com"
+  : "http://localhost:5173"
 
 app.use(cors({
     origin: origin,

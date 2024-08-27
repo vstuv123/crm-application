@@ -1,10 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const baseUrl = import.meta.env.VITE_APP_API_URL || "http://localhost:5000"
-
 export const customerLogAPI = createApi({
     reducerPath: 'customerLogAPI',
-    baseQuery: fetchBaseQuery({ baseUrl, credentials: "include" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://crm-application-euve.onrender.com", credentials: "include" }),
     tagTypes: ["logs", "log"],
     endpoints: (builder) => ({
         createCustomerLog: builder.mutation({
